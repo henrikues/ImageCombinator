@@ -5,17 +5,42 @@
     <title>ImageCombinator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="imageCombinator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <!--Main Tabs content -->
     <header>
       <h1>Image Combinator</h1>
       <p>Add new properties below, then combine them!</p>
     </header>
-    <input type="text" id="propName">
-    <input type="file" id="inp" multiple>
-    <canvas id="canvas"></canvas>
+    <main id="main">
+      <!-- top menu -->
+      <aside id="controls">
+        <input type="button" id="newTab" value="New Tab">
+        <input type="button" id="test" value="Test">
+        <input type="button" id="download" value="Download">
+      </aside>
+      <div id="tabs">
+        <div class="tab">
+          <div class="tabHeader">
+            Scales
+          </div>
+          <div class="tabContentSlider">
+            <input type="button" value="<-" class="tabButtonLeft">
+            <input type="button" value="->" class="tabButtonRight">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- popups -->
+    <div id="newTabPopup" class="invisible">
+      <input type="text" id="propName">
+      <input type="file" id="inp" multiple>
+      <input type="button" id="loadImages" value="Add">
+    </div>
+    <div id="TestPopup" class="invisible">
+      <canvas id="canvas"></canvas>
+    </div>
 
-    <input type="button" id="test" value="twst">
-    <input type="button" id="download" value="download">
   </body>
 </html>

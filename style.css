@@ -1,0 +1,29 @@
+#main{
+  width:800px;
+  height:500px;
+}
+#tabs{
+  width: 100%;
+  height: 80%;
+  background-color: gray;
+}
+#newTabPopup{
+  position: fixed;
+  width: 350px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
+
+
+
+.invisible {
+  display: none;
+}
