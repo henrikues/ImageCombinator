@@ -11,7 +11,10 @@
     <!--Main Tabs content -->
     <header>
       <h1>Image Combinator</h1>
-      <p>Add new properties below, then combine them!</p>
+      <p>Type the name of the project below and add tabs for your proprieties!</p>
+      <label for="ProjectName">Project Name: </label><input type="text" id="ProjectName">
+      <br>
+      <br>
     </header>
     <main id="main">
       <!-- top menu -->
@@ -20,16 +23,9 @@
         <input type="button" id="test" value="Test">
         <input type="button" id="download" value="Download">
       </aside>
+      <br>
       <div id="tabs">
-        <div class="tab">
-          <div class="tabHeader">
-            Scales
-          </div>
-          <div class="tabContentSlider">
-            <input type="button" value="/\" class="tabButtonLeft">
-            <input type="button" value="\/" class="tabButtonRight">
-          </div>
-        </div>
+        <p> Add a tab above! </p>
       </div>
       <aside id="testCanvas">
           <canvas id="canvas"></canvas>
@@ -37,8 +33,14 @@
     </main>
     <!-- popups -->
     <div id="newTabPopup" class="invisible">
+      <label for="propName">Propriety Name: </label><br>
       <input type="text" id="propName">
+      <br>
+      <br>
+      <label for="inp">Select files: </label><br>
       <input type="file" id="inp" multiple>
+      <br>
+      <br>
       <input type="button" id="loadImages" value="Add">
     </div>
 
